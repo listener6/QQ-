@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QQ注册</title>
+    <link rel="stylesheet" href="css/RegisterStyle.css">
+    <script src="js/RegControl.js"></script>
+
+
+</head>
+<body>
+<a href="HomePage.html" id="back">返回首页</a>
+<div class="main">
+
+
+    <div>
+        <h2 class="welcome">欢迎注册QQ</h2>
+        <p class="header">每一天，乐在沟通。</p>
+    </div>
+
+
+    <form action="#" onsubmit="affirm()">
+        <div>
+            <input type="text" name="user" placeholder="昵称" class="input" id="username" required onblur="user_check()" pattern="^[a-zA-Z0-9]{6,12}$">
+        </div>
+        <div>
+            <input type="password" name="password" aria-hidden="true" placeholder="密码" class="input" id="pwd" required pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$" onblur="pwd_check()">
+        </div>
+        <div>
+            <select name="tel" class="tel">
+                <option value="" selected>中国+86</option>
+                <option value="">中国香港特别行政区+852</option>
+                <option value="">中国澳门特别行政区+853</option>
+                <option value="">中国台湾地区+886</option>
+            </select>
+            <input type="number" name="tel-num" placeholder="手机号码" class="tel-num" id="tel-num"  pattern="^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\d{8}$" required onblur="tel_check()">
+        </div>
+        <div>
+            <input type="text" name="verify" id="verify" required>
+            <input type="button" name="verify" id="verify-code" value="发送短信验证码">
+        </div>
+
+
+
+        <div>
+            <input type="submit"value="立即注册" name="register" class="register" id="register" >
+        </div>
+        <div class="checkbox"><input type="checkbox" id="checkbox">我已阅读并同意相关服务条款和隐私政策</div>
+    </form>
+
+</div>
+
+<div class="copyright">
+    <p>Copyright © 1998-2021 Tencent. All Rights Reserved.</p>
+    <p>腾讯公司 版权所有</p>
+</div>
+
+</body>
+</html>

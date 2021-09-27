@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I'm QQ-每一天，乐在沟通</title>
+    <link rel="stylesheet" href="css/HomepageCss.css">
+    <link rel="stylesheet" href="css/LoginCss.css">
+    <script src="js/LoginControl.js"></script>
+
+</head>
+<body>
+<!--首页内容-->
+<div id="homepage">
+  <div id="toolbar" class="=toolbar">
+    <ul class="ul-one">
+      <li class="li-one">
+        <a href="https://im.qq.com/download" >下载</a>
+      </li>
+      <li class="li-one">
+        <a href="Register.html">注册</a>
+      </li>
+      <li class="li-one">
+        <a href="javascript:void(0)" onclick="loginShow()">登录QQ</a>
+      </li>
+      <li class="li-one">
+        <a href="https://vip.qq.com/">QQ会员</a>
+      </li>
+    </ul>
+    <div class="picture"><img src="image/bk2.png" alt=""></div>
+  </div>
+  <div>
+    <div class="picture"><img src="image/picture1.png" alt=""></div>
+
+    <div class="picture"><img src="image/picture3.png" alt=""></div>
+    <div class="picture"><img src="image/picture2.png" alt=""></div>
+  </div>
+
+  <div class="foot">
+    <div class="links">
+      <div class="map">
+        <h3>QQ安全</h3>
+        <ul class="ul-two">
+          <li class="li-two">安全中心</li>
+          <li class="li-two">冻结账号</li>
+          <li class="li-two">举报恶意行为</li>
+          <li class="li-two">恢复好友和群</li>
+        </ul>
+      </div>
+
+      <div class="map">
+        <h3>帮助反馈</h3>
+        <ul class="ul-two">
+          <li class="li-two">腾讯客服</li>
+          <li class="li-two">反馈问题</li>
+          <li class="li-two">新浪微博</li>
+        </ul>
+      </div>
+
+      <div class="map">
+        <h3>友情链接</h3>
+        <ul class="ul-two">
+          <li class="li-two">QQ群</li>
+          <li class="li-two">QQ音乐</li>
+          <li class="li-two">QQ浏览器</li>
+        </ul>
+      </div>
+
+      <div class="map">
+        <h3>友情链接</h3>
+        <ul class="ul-two">
+          <li class="li-two">腾讯视频</li>
+          <li class="li-two">腾讯电脑管家</li>
+          <li class="li-two">企鹅FM</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr width="610" color="#7f7f7f"/>
+
+    <div class="copyright">
+      <p>Copyright © 1998-2021 Tencent. All Rights Reserved.</p>
+      <p>腾讯公司 版权所有</p>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<!--登录页面-->
+<div id="window">
+  <div id="loginPage">
+    <div class="main" id="login">
+<!--      登录界面关闭按钮-->
+      <span class="close" onclick="closeWindow()">&times;</span>
+      <h2>账号密码登录</h2>
+      <p>推荐使用手机QQ扫码登录，防止盗号。</p>
+      <div class="login">
+        <form action="SelfIntro.html" method="post" name="form" >
+
+          <div >
+            <input type="number" name="user"  class="user" id="username" placeholder="支持QQ号/邮箱/手机号登录"  required onblur="user_check()" pattern="^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\d{8}$">
+            <span id="hint"></span>
+          </div>
+
+          <div >
+            <input type="password" name="password"  id="password" class="password" placeholder="密码" pattern="^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$" onblur="pwd_check()">
+          </div>
+          <div>
+            <input type="submit" name="login" value="登录">
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
